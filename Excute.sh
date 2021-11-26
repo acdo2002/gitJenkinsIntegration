@@ -23,4 +23,6 @@ echo ${CommitName}
 (cd /home/mingyi/jenkins-carta-ICD-dev/${CommitName}/carta-backend-ICD-test/src/test ; sudo ./repeat-export_ICD.sh)
 
 echo ${CommitName}
+echo ${CommitName}
+
 exit
