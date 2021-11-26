@@ -14,7 +14,7 @@ echo ${CommitName}
 ## build carta performance regression tests
 (cd /home/mingyi/jenkins-carta-ICD-dev/ ; sudo mkdir ${CommitName})
 (cd /home/mingyi/jenkins-carta-ICD-dev/${CommitName} ; sudo git clone --recursive https://github.com/CARTAvis/carta-backend-ICD-test.git)
-(cd /home/mingyi/jenkins-carta-ICD-dev/${CommitName}/carta-backend-ICD-test ; sudo npm install)
-(cd /home/mingyi/jenkins-carta-ICD-dev/${CommitName}/carta-backend-ICD-test/protobuf/ ; sudo ./build_proto.sh)
+(cd /home/mingyi/jenkins-carta-ICD-dev/${CommitName}/carta-backend-ICD-test ; npm install)
+(cd /home/mingyi/jenkins-carta-ICD-dev/${CommitName}/carta-backend-ICD-test/protobuf/ ; ./build_proto.sh)
 
 exit
