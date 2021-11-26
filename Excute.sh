@@ -21,4 +21,6 @@ echo ${CommitName}
 (sudo cp /home/mingyi/carta-ICD-dev/codes/3fd6679/* /home/mingyi/jenkins-carta-ICD-dev/${CommitName}/carta-backend-ICD-test/src/test)
 (cd /home/mingyi/jenkins-carta-ICD-dev/${CommitName}/carta-backend-ICD-test/src/test ; sudo sed -i -e 's/3fd6679/'${CommitName}'/g' export_ICD.sh)
 (cd /home/mingyi/jenkins-carta-ICD-dev/${CommitName}/carta-backend-ICD-test/src/test ; sudo ./repeat-export_ICD.sh)
+
+echo ${CommitName}
 exit
